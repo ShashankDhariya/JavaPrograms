@@ -14,6 +14,6 @@ public class FirstProgram {
 		System.out.println("3 Hello World");
 	}
 	public static void main(String args) {
-		System.out.println("4z Hello World");
+		System.out.println("4 Hello World");
 	}
 }
