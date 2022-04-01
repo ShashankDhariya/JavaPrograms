@@ -86,6 +86,7 @@ public class P3_Task_01_VariablesAndDataTypesInJava {
 		System.out.println(obj2.j++);
 		System.out.println(obj2.j);
 		
+		
 		ABC1.typeConversionAndTypeCasting();
 	}
 	
