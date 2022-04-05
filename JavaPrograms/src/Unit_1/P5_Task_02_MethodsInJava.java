@@ -25,5 +25,7 @@ class ABCD1{
 //		System.out.println(b);
 //		As b was a local variable so we can't access it outside the method
 		System.out.println(a);
+		
+		return a;
 	}
 }
