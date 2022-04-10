@@ -35,7 +35,15 @@ public class P8_String {
 class QuestionsOnString {
 
 	void palindromeOrNot(String s) {
-		String newStr = new String(s);
+		
+		int n = s.length();
+		char[] c = new char[n];
+		for(int i=0;i<n;i++) {
+			c[i] = s.charAt((n-1)-i);
+		}
+		
+		String newStr = c.toString(); 
+		
 		boolean b = s.equals(newStr);
 		if(b = true)
 			System.out.println("String is Palindrome");
