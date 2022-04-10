@@ -80,7 +80,8 @@ class QuestionsOnArray {
 	}
 
 	void findSecondLargestAndSecondSmallestElement(int[] arr) {
-		int l = arr[0], sl = arr[0];
+		int l = arr[0], sl = arr[1];
+		int s = arr[0], ss = arr[1];
 		int n = arr.length;
 		
 		for(int i=1;i<n;i++) {
@@ -88,8 +89,14 @@ class QuestionsOnArray {
 				sl = l;
 				l = arr[i];
 			}
+			else {
+				ss = s;
+				s = arr[i];
+			}
 		}
-		System.out.print("Largest number is "+l+"\nSecond largest number is "+sl);
+		
+		
+		System.out.print("Second largest number is "+sl+"\nSecond smallest number is "+ss);
 		System.out.println("\n");
 	}
 
