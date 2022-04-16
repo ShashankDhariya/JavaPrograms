@@ -1,4 +1,5 @@
 package Unit_1;
+
 /*
 Operator in Java is a symbol that is used to perform operations.
 Types of Operators in Java :
@@ -13,8 +14,8 @@ Types of Operators in Java :
 	
 	Ternary Operators 
 	Assignment Operators
-
 */
+
 public class P3_Task_02_OperatorsInJava {
 	public static void main(String[] args) {
 		OperatorsInJava obj = new OperatorsInJava();
@@ -33,7 +34,7 @@ class OperatorsInJava{
 	{
 		System.out.println("Inside UnaryOperator");
 		int a = 10;
-		boolean b = false;
+		
 		System.out.println(a++);	//10
 		System.out.println(a--); 	//11
 		System.out.println(++a);	//11
@@ -100,7 +101,7 @@ class OperatorsInJava{
 	}
 	
 	
-//	Second condition is also checked in Bitwise bur not in Logical(if first condition is False) 
+//	Second condition is also checked in Bitwise but not in Logical(if first condition is False) 
 	void BitwiseAndLogicalOperator()
 	{
 		System.out.println("Inside RelationalOperator");
@@ -125,7 +126,7 @@ class OperatorsInJava{
 		System.out.println(a);   // 11 because second condition is checked
 		
 		System.out.println("Bitwise inclusive OR:"+(12|12));  //1100 | 1100 = 1100
-		System.out.println("Bitwise exclusive OR:"+(12^12));  //1100 ^ 1100 = 1100
+		System.out.println("Bitwise exclusive OR:"+(12^12));  //1100 ^ 1100 = 0000
 		System.out.println();
 	}
 	
