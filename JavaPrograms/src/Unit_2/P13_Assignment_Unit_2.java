@@ -3,7 +3,7 @@ package Unit_2;
 public class P13_Assignment_Unit_2 {
 	public static void main(String[] args) {
 		 
-		Assignment_Questions_Unit_2 obj  = new Assignment_Questions_Unit_2;
+		Assignment_Questions_Unit_2 obj  = new Assignment_Questions_Unit_2();
 		obj.abstractClasscall();
 		obj.overloadingAndOverriding();
 		obj.accessProtectionInJava();
@@ -26,7 +26,7 @@ class Assignment_Questions_Unit_2{
 		obj.display();
  	}
 	
-	void accesProtectionInJava() {
+	void accessProtectionInJava() {
 		Sample3 obj = new Sample3();
 		System.out.println(obj.a);
 		System.out.println(obj.b);
@@ -48,7 +48,7 @@ abstract class Sample2{
 	int a = 10;   //default protection 
 	public int b = 20; // can be accessed outside Unit_2 Package but within same project 
 	protected int c = 30; // can only be accessed within Unit_2 Package
-	private int d = 40;   // within Parentclass only, not even in its sub class 
+	private int d = 40;   // within ParentClass only, not even in its sub class 
 	
 	void showData() {
 		System.out.println("Inside Sample2 Parent class");
