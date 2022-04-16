@@ -25,6 +25,6 @@ class NewClass{
 	//final double pi = 3.14;
 	void add(int a,int b) {
 		System.out.println(a+b);
-		System.out.println(P2_Task02_ConstantsInJava.pi);
+		System.out.println(P2_Task_02_ConstantsInJava.pi);
       }
 }
