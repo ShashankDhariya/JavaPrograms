@@ -37,15 +37,17 @@ class QuestionsOnString {
 	void palindromeOrNot(String s) {
 		
 		int n = s.length();
-		char[] c = new char[n];
-		for(int i=0;i<n;i++) {
-			c[i] = s.charAt((n-1)-i);
+		int ctr = 0;
+		int i = -1;
+		int j = n;
+		
+		while(++i<--j) {
+			if(s.charAt(i) != s.charAt(j))
+				ctr++;
+				break;
 		}
 		
-		String newStr = c.toString(); 
-		
-		boolean b = s.equals(newStr);
-		if(b = true)
+		if(ctr == 0)
 			System.out.println("String is Palindrome");
 		else 
 			System.out.println("String is not Palindrome");
