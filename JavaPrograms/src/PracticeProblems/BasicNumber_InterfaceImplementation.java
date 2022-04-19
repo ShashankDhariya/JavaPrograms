@@ -7,7 +7,7 @@ using interface implementation
 */
 
 import java.util.Scanner;
-public class BasicNumber {
+public class BasicNumber_InterfaceImplementation {
 	public static void main(String[] args){
 		System.out.print("Enter number to be checked : ");
 		Scanner in = new Scanner(System.in);
