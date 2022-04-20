@@ -1,15 +1,18 @@
 package PracticeProblems;
 
-import java.util.Scanner;
 public class ObjectCall {
 	public static void main(String[] args) {
 		
-		Scanner in = new Scanner(System.in);
-		ABCD obj = new ABCD();
-		int a = in.nextInt();
-		for(int i=0;i<a;i++) {
-			obj.call();
-		}
+		ABCD obj1 = new ABCD();
+		ABCD obj2 = new ABCD();
+		ABCD obj3 = new ABCD();
+		ABCD obj4 = new ABCD();
+		
+		obj1.call();
+		obj2.call();
+		obj3.call();
+		obj4.call();
+		
 		System.out.println("Number of object calls : "+ABCD.ctr);
 	}
 }
