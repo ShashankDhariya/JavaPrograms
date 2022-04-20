@@ -12,7 +12,6 @@ public class ObjectCall {
 		obj2.call();
 		obj3.call();
 		obj4.call();
-		
 		System.out.println("Number of object calls : "+ABCD.ctr);
 	}
 }
