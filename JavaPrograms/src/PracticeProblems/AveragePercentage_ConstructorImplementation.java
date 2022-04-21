@@ -16,7 +16,7 @@ public class AveragePercentage_ConstructorImplementation {
 			int perc = in.nextInt();
 			obj[i] = new Student(name,age,'A',perc);
 		}
-		System.out.println("Average of all 6 students is "+(float)Student.avg/6);
+		System.out.println("Average of all 6 students is "+(float)Student.sum/6);
 		
 //		Another method to find average without using static variable 
 //		int sum = 0;
@@ -29,7 +29,7 @@ public class AveragePercentage_ConstructorImplementation {
 }
 
 class Student{
-	static int avg = 0;
+	static int sum = 0;
 	String name;
 	byte age;
 	char sec;
@@ -39,6 +39,6 @@ class Student{
 		age = a;
 		sec = s;
 		perc = p;
-		avg = perc+avg;
+		avg = perc+sum;
 	}
 }
