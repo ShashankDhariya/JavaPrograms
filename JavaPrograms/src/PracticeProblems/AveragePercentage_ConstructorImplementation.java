@@ -39,6 +39,6 @@ class Student{
 		age = a;
 		sec = s;
 		perc = p;
-		avg = perc+sum;
+		sum = perc+sum;
 	}
 }
