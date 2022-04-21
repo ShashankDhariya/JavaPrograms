@@ -18,6 +18,7 @@ public class AveragePercentage_ConstructorImplementation {
 		}
 		System.out.println("Average of all 6 students is "+(float)Student.sum/6);
 		
+		in.close();
 //		Another method to find average without using static variable 
 //		int sum = 0;
 //		for(int i=0;i<6;i++) {
