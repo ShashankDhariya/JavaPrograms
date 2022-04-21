@@ -14,7 +14,7 @@ public class AveragePercentage_ConstructorImplementation {
 			byte age = in.nextByte();
 			System.out.print("Enter Percentage: ");
 			int perc = in.nextInt();
-			obj[i] = new Student(name,age,"A",perc);
+			obj[i] = new Student(name,age,'A',perc);
 		}
 		System.out.println("Average of all 6 students is "+(float)Student.avg/6);
 		in.close();
@@ -23,7 +23,11 @@ public class AveragePercentage_ConstructorImplementation {
 
 class Student{
 	static int avg = 0;
-	Student(String name, byte age, String sec,int perc){
+	String name;
+	byte age;
+	char sec;
+	int perc;
+	Student(String name, byte age, char sec,int perc){
 		avg = perc+avg;
 	}
 }
