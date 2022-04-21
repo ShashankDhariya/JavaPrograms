@@ -27,7 +27,11 @@ class Student{
 	byte age;
 	char sec;
 	int perc;
-	Student(String name, byte age, char sec,int perc){
+	Student(String n, byte a, char s,int p){
+		name = n;
+		age = a;
+		sec = s;
+		perc = p;
 		avg = perc+avg;
 	}
 }
