@@ -21,21 +21,26 @@ public class Q6 {
 		int a = in.nextInt();
 		System.out.print("Enter second number : ");
 		int b = in.nextInt();
-		
 		in.close();
 		
-		int s = obj.sample1(a,b);
-		int d = obj.sample2(a,b);
-		System.out.println(s);
-		System.out.println(d);
+		boolean bool = (a > b)? true:false;
+		
+		if(bool == true) {
+			int s = obj.sum(a,b);
+			System.out.println("Result is "+s);
+		}
+		else{
+			int d = obj.sub(a,b);
+			System.out.println("Result is "+d);
+		}
 	}
 }
 
 class sample{
-	int sample1(int a, int b){
+	int sum(int a, int b){
 		return a+b;
 	}
-	int sample2(int a, int b){
+	int sub(int a, int b){
 		if(a-b < 0)
 			return 0;
 		else
