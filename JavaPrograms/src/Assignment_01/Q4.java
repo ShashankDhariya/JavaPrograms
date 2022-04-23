@@ -24,12 +24,14 @@ public class Q4 {
 }
 
 class ClassOne{
+	
 	ClassOne(int a){
     	System.out.println("Class One => Paramterized Constructor");
 	}
 }
 
 class ClassTwo extends ClassOne{
+	
 	ClassTwo(){
 		super(1);
 		System.out.println("Class Two => Default Constructor");
@@ -37,6 +39,7 @@ class ClassTwo extends ClassOne{
 }
 
 class ClassThree extends ClassTwo{
+	
 	ClassThree(){
 		System.out.println("Class Three => Default Constructor");
 	}

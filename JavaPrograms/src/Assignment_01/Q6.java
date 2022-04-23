@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Q6 {
 	public static void main(String[] args) {
 		
-		System.out.println("ShashankDhariya_G_20011953\n");
+		System.out.println("ShashankDhariya_G_20011953\n"); 
 		
 		Scanner in = new Scanner(System.in);
 		sample obj = new sample();

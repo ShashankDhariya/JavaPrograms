@@ -26,6 +26,7 @@ public class Q5 {
 		
 		Scanner in = new Scanner(System.in);
 		employee[] obj = new employee[8];
+		
 		for(int i=0;i<8;i++) {
 			
 			System.out.print("Enter Name : ");
