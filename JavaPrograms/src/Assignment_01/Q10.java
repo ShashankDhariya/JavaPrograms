@@ -29,7 +29,7 @@ public class Q10 {
 					break;
 				case 2:System.out.println("\nEnter details for Chennai : ");
 					break;
-				case 4:System.out.println("\nEnter details for Kolkata : ");
+				case 3:System.out.println("\nEnter details for Kolkata : ");
 					break;
 			}
 			
@@ -47,6 +47,9 @@ public class Q10 {
 			int s = in.nextInt();
 			obj[i].count(k,a,w,s);
 		}
+		in.close();
+		
+		System.out.println();
 		System.out.println("Total number of Maruti K-10 sold : "+Car.k);
 		System.out.println("Total number of Zen Astelo sold  : "+Car.a);
 		System.out.println("Total number of Wagon sold       : "+Car.w);
