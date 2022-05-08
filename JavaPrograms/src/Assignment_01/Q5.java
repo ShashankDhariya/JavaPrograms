@@ -42,8 +42,11 @@ public class Q5 {
 			int salary = in.nextInt();
 			
 			obj[i] = new employee(name,age,department,salary);
+			obj[i].calc();
 		}
 		in.close();
+		
+		
 		
 		System.out.println("Total salary paid by department A : "+employee.sumA);
 		System.out.println("Total salary paid by department B : "+employee.sumB);
@@ -72,16 +75,16 @@ class employee{
 	}
 	void calc() {
 		
-		if(d.equals("A")) {
+		if(d.equals("A") || d.equals("a")) {
 			sumA += s;
 		}
-		else if(d.equals("B")) {
+		else if(d.equals("B") || d.equals("b")) {
 			sumB += s;
 		}
-		else if(d.equals("c")) {
+		else if(d.equals("C") || d.equals("c")) {
 			sumC += s;
 		}
-		else if(d.equals("D")) {
+		else if(d.equals("D") || d.equals("d")) {
 			sumD += s;
 		}
 	}
