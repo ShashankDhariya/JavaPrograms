@@ -45,13 +45,10 @@ public class Q5 {
 		}
 		in.close();
 		
-		for(int i=0;i<8;i++) {
-			System.out.println("Name 	   : "+obj[i].n);
-			System.out.println("Age  	   : "+obj[i].a);
-			System.out.println("Department : "+obj[i].d);
-			System.out.println("Salary	   : "+obj[i].s);
-			System.out.println();
-		}
+		System.out.println("Total salary paid by department A : "+employee.sumA);
+		System.out.println("Total salary paid by department B : "+employee.sumB);
+		System.out.println("Total salary paid by department C : "+employee.sumC);
+		System.out.println("Total salary paid by department D : "+employee.sumD);
 	}
 }
 
@@ -60,13 +57,32 @@ class employee{
 	int a;
 	String d;
 	int s;
+	static int sumA = 0;
+	static int sumB = 0;
+	static int sumC = 0;
+	static int sumD = 0;
 	employee(String name, int age, String department, int salary){
 		n = name;
 		a = age;
 		d = department;
-		if(salary > 30000)
+		if(s > 30000)
 			s = 25000;
 		else
 			s = salary;
+	}
+	void calc() {
+		
+		if(d.equals("A")) {
+			sumA += s;
+		}
+		else if(d.equals("B")) {
+			sumB += s;
+		}
+		else if(d.equals("c")) {
+			sumC += s;
+		}
+		else if(d.equals("D")) {
+			sumD += s;
+		}
 	}
 }
