@@ -25,7 +25,7 @@ public class Q5 {
 		System.out.println("ShashankDhariya_G_20011953\n");
 		
 		Scanner in = new Scanner(System.in);
-		employee[] obj = new employee[8];
+		employee[] arr = new employee[8];
 		
 		for(int i=0;i<8;i++) {
 			
@@ -41,17 +41,30 @@ public class Q5 {
 			System.out.print("Enter Salary : ");
 			int salary = in.nextInt();
 			
-			obj[i] = new employee(name,age,department,salary);
-			obj[i].calc();
+			arr[i] = new employee(name,age,department,salary);
 		}
 		in.close();
 		
+		int sumA = 0;
+		int sumB = 0;
+		int sumC = 0;
+		int sumD = 0;
 		
+		for(int i=0;i<8;i++) {
+			if(arr[i].d.equals("A"))
+				sumA += arr[i].s;
+			else if(arr[i].d.equals("B"))
+				sumB += arr[i].s;
+			else if(arr[i].d.equals("C"))
+				sumC += arr[i].s;
+			else if(arr[i].d.equals("D"))
+				sumD += arr[i].s;
+		}
 		
-		System.out.println("Total salary paid by department A : "+employee.sumA);
-		System.out.println("Total salary paid by department B : "+employee.sumB);
-		System.out.println("Total salary paid by department C : "+employee.sumC);
-		System.out.println("Total salary paid by department D : "+employee.sumD);
+		System.out.println("Total salary paid by department A : "+sumA);
+		System.out.println("Total salary paid by department B : "+sumB);
+		System.out.println("Total salary paid by department C : "+sumC);
+		System.out.println("Total salary paid by department D : "+sumD);
 	}
 }
 
@@ -60,32 +73,13 @@ class employee{
 	int a;
 	String d;
 	int s;
-	static int sumA = 0;
-	static int sumB = 0;
-	static int sumC = 0;
-	static int sumD = 0;
 	employee(String name, int age, String department, int salary){
 		n = name;
 		a = age;
 		d = department;
-		if(s > 30000)
+		if(salary > 30000)
 			s = 25000;
 		else
 			s = salary;
-	}
-	void calc() {
-		
-		if(d.equals("A") || d.equals("a")) {
-			sumA += s;
-		}
-		else if(d.equals("B") || d.equals("b")) {
-			sumB += s;
-		}
-		else if(d.equals("C") || d.equals("c")) {
-			sumC += s;
-		}
-		else if(d.equals("D") || d.equals("d")) {
-			sumD += s;
-		}
 	}
 }
