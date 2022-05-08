@@ -79,6 +79,7 @@ class employee{
 		d = department;
 		if(salary > 30000)
 			s = 25000;
+		
 		else
 			s = salary;
 	}
