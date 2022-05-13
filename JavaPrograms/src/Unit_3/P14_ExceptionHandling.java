@@ -13,7 +13,7 @@ public class P14_ExceptionHandling {
 //		obj.basicException();
 		obj.handleException();
 		obj.multipleCatch();
-//		obj.inputMismatchException();
+		obj.inputMismatchException();
 //		obj.stackOverFlow(10);				// Stack overflow is not an exception, it's a error
 		obj.indexOutOfBoundException();
 		obj.nullPointerException();
@@ -41,7 +41,6 @@ class exception{
 		}catch(ArithmeticException e) {
 			System.out.println(e.getMessage()+" exception handled");
 		}
-		System.out.println("Done");
 	}
 	
 	void multipleCatch() {
@@ -62,14 +61,13 @@ class exception{
 	void inputMismatchException() {
 		try{
 			Scanner in = new Scanner(System.in);
-			System.out.println("Enter a number : ");
+			System.out.print("Enter a number : ");
 			int a = in.nextInt();
 			System.out.println("Entered number : "+a);
 			in.close();
 		}catch(InputMismatchException e) {
-			System.out.println("Input Mismatch Exception");
+			System.out.println("Input Mismatch Exception occured");
 		}
-		System.out.println("Done");
 	}
 	
 	void stackOverFlow(int i) {
@@ -81,6 +79,7 @@ class exception{
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
+//		Stack overflow isn't a exception but a error so it can't be handled using exception handling concept of Java
 		System.out.println("Done");
 	}
 	
@@ -91,7 +90,6 @@ class exception{
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
-		System.out.println("Done");
 	}
 	
 	void nullPointerException() {
@@ -101,7 +99,6 @@ class exception{
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
-		System.out.println("Done");
 	}
 	
 	void useOfThrow(int age) throws Exception{
@@ -115,13 +112,12 @@ class exception{
 		try {
 			useOfThrow(17);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+//			e.printStackTrace();	prints the exception
+			System.out.println(e.getMessage());
 		}
 		
 		finally {
 			System.out.println("Exception handled succesfully");
 		}
-		
 	}
 }
