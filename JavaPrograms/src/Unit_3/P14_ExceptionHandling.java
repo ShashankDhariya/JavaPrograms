@@ -160,7 +160,8 @@ class exception{
 
 @SuppressWarnings("serial")
 class ManualException extends Exception{
-	public String getMeassage() {
+	@Override
+	public String getMessage() {
 		String msg = "Exception Occured";
 		return msg;
 	}
