@@ -19,6 +19,8 @@ public class P14_ExceptionHandling {
 		obj.nullPointerException();
 //		obj.useOfThrow(17);
 		obj.useOfThrows_And_Finally();
+		obj.checkedAndUncheckedException();
+		obj.ManualExceptionThrow();
 	}
 }
 
@@ -119,5 +121,47 @@ class exception{
 		finally {
 			System.out.println("Exception handled succesfully");
 		}
+	}
+	
+	void checkedAndUncheckedException() {
+//		Unchecked Exception: Runtime catching
+		
+/*		This exception is caught at runtime 
+ 		int x = 0;
+		int y = 10;
+		int z = y / x;
+		System.out.println(z);
+*/
+
+//		Checked Exception: Compile time catching
+		try {
+			useOfThrow(1);
+		} catch (Exception e) {
+			System.out.println("Not eligible(Exception Handled)");
+		}
+	}
+	
+	void area(int r) throws ManualException{
+		if(r < 0)
+			throw new ManualException();
+		else 
+			System.out.println("Area is : "+r*r);
+	}
+	
+	void ManualExceptionThrow() {
+		try {
+			area(-1);
+		}catch(ManualException e){
+			System.out.println(e.getMessage());
+		}
+	}
+}
+
+
+@SuppressWarnings("serial")
+class ManualException extends Exception{
+	public String getMeassage() {
+		String msg = "Exception Occured";
+		return msg;
 	}
 }
