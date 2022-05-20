@@ -37,7 +37,7 @@ class FileHandling{
 		
 		
 //		String st;
-//		while((st = br.readLine()) != null) {			// Termintes after getting "\n"
+//		while((st = br.readLine()) != null) {			// Terminates after getting "\n"
 //			System.out.println(st);
 //		}
 		
