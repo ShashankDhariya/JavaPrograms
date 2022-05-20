@@ -15,9 +15,9 @@ import java.util.List;
 public class P15_FileHandling {
 	public static void main(String[] args) throws IOException {
 		FileHandling obj = new FileHandling();
-//		obj.takeInputFromFile();
-//		obj.saveOutputIntoAFile();
-//		obj.createALogFile();
+		obj.takeInputFromFile();
+		obj.saveOutputIntoAFile();
+		obj.createALogFile();
 	}
 }
 

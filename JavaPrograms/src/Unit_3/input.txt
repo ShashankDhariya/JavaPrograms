@@ -6,4 +6,4 @@ popular
 language
 Thanks 
 
-Hello Buddy Java is very popular language Thanks    //7 spaces so 7+1 words 
+Hello Buddy Java is very popular language Thanks    // 7 spaces so 7+1 words 
