@@ -1,0 +1,8 @@
+Sensitive code should always be kept in try block otherwise no exception will not be handled
+Sensitive code here means code in which exception may occur 
+
+In MultiCatch blocks, only single catch block is executed(if exception related to it occurred) 
+while catch blocks are others are skipped
+
+FileWriter - 
+	  

@@ -15,8 +15,8 @@ import java.util.List;
 public class P15_FileHandling {
 	public static void main(String[] args) throws IOException {
 		FileHandling obj = new FileHandling();
-		obj.takeInputFromFile();
-		obj.saveOutputIntoAFile();
+//		obj.takeInputFromFile();
+//		obj.saveOutputIntoAFile();
 		obj.createALogFile();
 	}
 }
@@ -68,7 +68,7 @@ class FileHandling{
 		FileWriter myObj = null;
 		
 		try {
-			myObj = new FileWriter("output.txt", false); // By default false (for append-write true) 
+			myObj = new FileWriter("C:\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\output.txt", false); // By default false (for append-write true) 
 			
 		}catch(IOException e) {
 			e.printStackTrace();
@@ -92,7 +92,7 @@ class FileHandling{
 		FileWriter myObj = null;
 		
 		try {
-			myObj = new FileWriter("log.txt",true);
+			myObj = new FileWriter("C:\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\log.txt",true);
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
