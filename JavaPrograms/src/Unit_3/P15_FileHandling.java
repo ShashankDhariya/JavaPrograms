@@ -15,17 +15,16 @@ import java.util.List;
 public class P15_FileHandling {
 	public static void main(String[] args) throws IOException {
 		FileHandling obj = new FileHandling();
-//		obj.takeInputFromFile();
-//		obj.saveOutputIntoAFile();
-		obj.createALogFile();
+		obj.takeInputFromFile();
+//	 	obj.createALogFile();
 	}
 }
 
 //Program can't read file directly we need drivers or buffer
 class FileHandling{
-	static int a = 10;
+	static int a=10;
 	void takeInputFromFile() throws IOException {
-		String path = "\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\output.txt";
+		String path = "\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\input.txt";
 		File file = new File(path);
 		
 		BufferedReader br = new BufferedReader(new FileReader(file));
