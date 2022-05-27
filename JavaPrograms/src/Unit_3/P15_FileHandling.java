@@ -16,7 +16,8 @@ public class P15_FileHandling {
 	public static void main(String[] args) throws IOException {
 		FileHandling obj = new FileHandling();
 		obj.takeInputFromFile();
-//	 	obj.createALogFile();
+		obj.saveOutputIntoAFile();
+	 	obj.createALogFile();
 	}
 }
 

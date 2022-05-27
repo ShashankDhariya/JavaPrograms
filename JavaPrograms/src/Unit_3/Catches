@@ -1,3 +1,5 @@
+JVM - CPU(Memory Management) + OS(MultiThreading)
+
 Sensitive code should always be kept in try block otherwise no exception will not be handled
 Sensitive code here means code in which exception may occur 
 
