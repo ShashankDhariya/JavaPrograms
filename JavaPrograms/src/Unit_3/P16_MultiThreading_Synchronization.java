@@ -40,10 +40,10 @@ public class P16_MultiThreading_Synchronization {
 		threadTwo.start();
 
 //		Waits for this thread to die. {Main thread will wait untill this thread is finished}
-//		threadOne.join();			// Next instruction(programming statement) will be performed after the execution of this statement
+		threadOne.join();			// Next instruction(programming statement) will be performed after the execution of this statement
 		
 //		Waits for this thread to die. {Main thread will wait until this thread is finished}
-//		threadTwo.join();
+		threadTwo.join();
 
 		System.out.println("Count: " + WebCount.count);
 	}
