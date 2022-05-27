@@ -25,7 +25,7 @@ public class P15_FileHandling {
 class FileHandling{
 	static int a=10;
 	void takeInputFromFile() throws IOException {
-		String path = "\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\input.txt";
+		String path = "C:\\Users\\dhari\\git\\Programs\\JavaPrograms\\src\\Unit_3\\input.txt";
 		File file = new File(path);
 		
 		BufferedReader br = new BufferedReader(new FileReader(file));
