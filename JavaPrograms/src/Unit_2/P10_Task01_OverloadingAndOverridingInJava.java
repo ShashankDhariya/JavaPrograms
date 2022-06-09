@@ -10,9 +10,9 @@ public class P10_Task01_OverloadingAndOverridingInJava {
 		System.out.println("add() with 3 parameters");
 		System.out.println(obj.add(4,6,7));
 		
-		InheritFirstOne obj2 = new InheritFirstOne();
+		InheritFirstClass obj2 = new InheritFirstClass();
 		System.out.println(obj2.add(1,2));
-//		System.out.println(obj2.add(1,2,3));
+		System.out.println(obj2.add(1,2,3));
 	}
 }
 
