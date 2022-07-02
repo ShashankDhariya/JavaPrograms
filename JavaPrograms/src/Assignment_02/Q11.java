@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Q10 {
+public class Q11 {
 	public static void main(String[] args) {
 		register_gui obj = new register_gui(); 
 	}
@@ -24,7 +24,6 @@ class register_gui extends JFrame{
 	JLabel l4;
 	JLabel l5;
 	JLabel l6;
-	JLabel l7;
 	JLabel ln;
 	
 	JTextField t1;
@@ -33,6 +32,7 @@ class register_gui extends JFrame{
 	JTextField t4;
 	JTextField t5;
 	JTextField t6;
+	JTextField t;
 	JButton b;
 	
 	StringBuffer sb = new StringBuffer();
@@ -52,7 +52,7 @@ class register_gui extends JFrame{
 		t5 = new JTextField(15);
 		l6 = new JLabel("Phone Number  ");
 		t6 = new JTextField(15);
-		l7 = new JLabel("Registered Email IDs : ");
+		t = new JTextField("Registered Email IDs ");
 		ln = new JLabel("Nil");
 		b = new JButton("                                                Submit                                                   ");
 		
@@ -82,7 +82,7 @@ class register_gui extends JFrame{
 		add(l6);
 		add(t6);
 		add(b);
-		add(l7);
+		add(t);
 		add(ln);
 		
 		b.addActionListener(al);
