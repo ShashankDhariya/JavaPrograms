@@ -18,10 +18,11 @@ public class Q3 extends Canvas{
 	}
 	
 	public void paint(Graphics grap) {
-		grap.setColor(Color.red);
-		grap.fillOval(125, 125, 125, 125);
+		grap.setColor(Color.green);
+		grap.fillOval(85, 32, 75, 75);
+//		grap.fillOval(ALLBITS, ABORT, WIDTH, HEIGHT);
 		
-		grap.setColor(Color.black);
-		grap.drawLine(270, 270, 100, 100);
+		grap.setColor(Color.blue);
+		grap.drawLine(362, 362, 0, 0);
 	}
 }
